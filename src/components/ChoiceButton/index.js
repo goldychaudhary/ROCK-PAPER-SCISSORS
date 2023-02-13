@@ -18,7 +18,7 @@ const ChoiceButton = props => {
       className="choice-btn"
       type="button"
     >
-      <img className="choice-pic" src={imageUrl} alt="" />
+      <img className="choice-pic" src={imageUrl} alt={id} />
     </button>
   )
 }

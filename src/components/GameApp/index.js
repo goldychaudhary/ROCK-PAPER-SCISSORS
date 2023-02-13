@@ -24,6 +24,7 @@ class GameApp extends Component {
             <br /> SCISSORS
             <br />
           </h1>
+          <h1 className="blind">Rock Paper Scissors</h1>
         </div>
         <div className="counter-bg">
           <p>Score</p>
