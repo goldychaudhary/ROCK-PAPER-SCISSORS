@@ -3,13 +3,10 @@ import './index.css'
 const ChoiceButton = props => {
   const {details, onUserChoice} = props
   const {id, imageUrl} = details
-  //   console.log(details)
 
   const onUserClick = () => {
     onUserChoice(id)
   }
-
-  console.log(`${id.toLowerCase()}Button`)
 
   return (
     <button

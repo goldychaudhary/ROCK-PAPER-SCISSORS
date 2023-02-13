@@ -10,7 +10,7 @@ class GameApp extends Component {
     showPlayingView: true,
     userChoice: '',
     opponentChoice: '',
-    result: 'DRAW',
+    result: '',
   }
 
   renderHeader = () => {
@@ -82,8 +82,9 @@ class GameApp extends Component {
 
   onUserChoice = id => {
     const {choicesList} = this.props
-    const randomNumber = Math.ceil(Math.random() * 3)
+    const randomNumber = Math.ceil(Math.random() * 3) - 1
     const opponentChoice = choicesList[randomNumber].imageUrl
+
     const userChoice = choicesList.filter(each => each.id === id)
 
     const userChose = userChoice[0].id
@@ -117,13 +118,11 @@ class GameApp extends Component {
         score: prevState.score - 1,
       }))
     }
-
-    console.log('opponentChose', opponentChose)
-    console.log('userChose', userChose)
   }
 
   renderPlayingView = () => {
     const {choicesList} = this.props
+
     return (
       <div className="playing-view-main">
         {choicesList.map(each => (
@@ -139,6 +138,7 @@ class GameApp extends Component {
 
   render() {
     const {showPlayingView} = this.state
+
     return (
       <div className="main-bg">
         {this.renderHeader()}
