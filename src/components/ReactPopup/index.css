@@ -1,0 +1,18 @@
+.modal-bg {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 600px;
+  background-color: white;
+  margin-top: 200px;
+  padding: 10px;
+}
+.rules-pic {
+  width: 90%;
+  margin: 20px;
+}
+.close-button {
+  align-items: flex-end;
+  margin-left: auto;
+  width: 40px;
+}

@@ -1,0 +1,79 @@
+.main-bg {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #223a5f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-bg {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 100px;
+  padding: 15px;
+}
+
+.counter-bg {
+  background-color: white;
+  color: #223a5f;
+  width: 150px;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: Roboto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.count {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: Roboto;
+  margin: 0px;
+}
+.rule-btn {
+  align-self: flex-end;
+  margin: auto 150px 20px 200px;
+}
+.playing-view-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+  background-color: transparent;
+}
+.result-view-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+
+  margin-top: 40px;
+}
+
+.result-choice-pic {
+  width: 200px;
+}
+.pics-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.play-again-btn {
+  color: black;
+  background-color: white;
+  border-style: none;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+}

@@ -1,0 +1,13 @@
+.choice-pic {
+  height: 200px;
+  width: 200px;
+}
+.choice-btn {
+  margin: 30px;
+  border-radius: 50%;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
