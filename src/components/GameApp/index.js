@@ -82,7 +82,7 @@ class GameApp extends Component {
 
   onUserChoice = id => {
     const {choicesList} = this.props
-    const randomNumber = Math.ceil(Math.random() * 3) - 1
+    const randomNumber = Math.floor(Math.random() * choicesList.length)
     const opponentChoice = choicesList[randomNumber].imageUrl
 
     const userChoice = choicesList.filter(each => each.id === id)
@@ -95,6 +95,7 @@ class GameApp extends Component {
       (userChose === 'SCISSORS' && opponentChose === 'PAPER') ||
       (userChose === 'PAPER' && opponentChose === 'ROCK')
     ) {
+
       this.setState(prevState => ({
         result: 'YOU WON',
         showPlayingView: false,
@@ -103,6 +104,7 @@ class GameApp extends Component {
         score: prevState.score + 1,
       }))
     } else if (userChose === opponentChose) {
+  
       this.setState({
         result: 'IT IS DRAW',
         showPlayingView: false,
@@ -110,6 +112,7 @@ class GameApp extends Component {
         opponentChoice,
       })
     } else {
+      
       this.setState(prevState => ({
         result: 'YOU LOSE',
         showPlayingView: false,
